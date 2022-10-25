@@ -104,7 +104,9 @@ let _expenses = {
             hom: 0,
             oth: 0
         },
-        oth: {}
+        oth: {
+            oth: 0
+        }
     }
 };
 
@@ -511,7 +513,7 @@ $("#finish-to-summary").on("click", function() {
     tra = list.tra.ren + list.tra.gro + list.tra.fue + list.tra.hom + list.tra.oth;
     foo = list.foo.ren + list.foo.gro + list.foo.fue + list.foo.hom + list.foo.oth;
     hea = list.hea.ren + list.hea.gro + list.hea.fue + list.hea.hom + list.hea.oth;
-    oth = list.mis.ren + list.mis.gro + list.mis.fue + list.mis.hom + list.mis.oth + list.oth.oth || 0;
+    oth = list.mis.ren + list.mis.gro + list.mis.fue + list.mis.hom + list.mis.oth + list.oth.oth;
     $("#calculate-summary #hou-tot").html( new Intl.NumberFormat().format(hou) );
     $("#calculate-summary #hou-tot-color").css( "background-color", "rgba(197, 199, 101, 0.5)" );
     $("#calculate-summary #tra-tot").html( new Intl.NumberFormat().format(tra) );
