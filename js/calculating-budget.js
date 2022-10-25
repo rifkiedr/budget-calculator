@@ -526,7 +526,7 @@ $("#finish-to-summary").on("click", function() {
     new Chart( $(".right-sum-chart>canvas"), {
         type: "doughnut",
         data: {
-        //   labels: ['Housing', 'Transport', 'Food', 'Healthcare', 'Other'],
+          labels: ['Housing', 'Transport', 'Food', 'Healthcare', 'Other'],
           datasets: [
             {
               label: 'Dataset',
@@ -535,6 +535,11 @@ $("#finish-to-summary").on("click", function() {
           ]
         },
         options: {
+            plugins:{
+                legend: {
+                  display: false,
+                }
+            },
             datasets: {
                 doughnut: {
                     offset: 0,
@@ -547,8 +552,9 @@ $("#finish-to-summary").on("click", function() {
                         "rgba(199, 101, 101, 0.5)",
                         "rgba(189, 189, 189, 0.5)",
                     ],
-                  },
-            }
+                },
+            },
+            
         }
     });
 
