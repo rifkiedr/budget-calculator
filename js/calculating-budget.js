@@ -264,7 +264,7 @@ function __income_checked_box()
         }
     });
     if (checked == 6) {
-        $("#income-calculate #inc-adm>div").html("Edit More");
+        $("#income-calculate #inc-adm>div").html("Edit");
     }else {
         $("#income-calculate #inc-adm>div").html("Add More");
     }
@@ -360,7 +360,7 @@ function __expenses_details_oth( name )
         $("#expenses-calculate #exp-"+name+"-div .form-accordion-details>div>.wrapping-oth").append(oth);
     }
     if (oth_length >= 2) {
-        $("#expenses-calculate #exp-"+name+"-div .form-accordion-details #exp-adm>div").html("Edit More Subcategory");
+        $("#expenses-calculate #exp-"+name+"-div .form-accordion-details #exp-adm>div").html("Edit Subcategory");
     }
     console.log(oth_length);
     // listen hou
@@ -472,7 +472,7 @@ function __expenses_checked_box()
         }
     });
     if (checked == 6) {
-        $("#expenses-calculate #exp-adm.parent>div").html("Edit More");
+        $("#expenses-calculate #exp-adm.parent>div").html("Edit");
     }else {
         $("#expenses-calculate #exp-adm.parent>div").html("Add More");
     }
