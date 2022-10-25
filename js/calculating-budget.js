@@ -143,6 +143,7 @@ function __income()
     let oth = parseFloat( reverseFormatNumber( $("#income-calculate #inc-oth").html() ) );
     // set total
     let total = emp + sav + pen + ben + gif + oth;
+    total = Math.round(total);
     // output to html
     $("#income-calculate #inc-tot").html( formatNumber( total.toFixed(0) ) );
     // save to storage
@@ -180,6 +181,7 @@ function __income_details( name )
     }else {
         total = ipt / 12;
     }
+    total = Math.round( total );
     // output to html
     inc.html( formatNumber( total.toFixed(0) ) );
     // calculate income total
@@ -330,6 +332,7 @@ function __expenses_details( name )
         }else {
             total += ipt / 12;
         }
+        total = Math.round( total );
         // check
         if ( (store_name=='ren') || (store_name=='gro') || (store_name=='fue') || (store_name=='hom') ) {
             _expenses.list[name][store_name] = total;
