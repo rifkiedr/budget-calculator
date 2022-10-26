@@ -316,6 +316,12 @@ function __expenses_details( name )
     let total = 0;
     let inc = $("#expenses-calculate #exp-"+name+"-div #exp-"+name+"");
     let inc_collect = $("#expenses-calculate #exp-"+name+"-div .inc-collect");
+    _expenses.list.hou.oth = 0;
+    _expenses.list.tra.oth = 0;
+    _expenses.list.foo.oth = 0;
+    _expenses.list.hea.oth = 0;
+    _expenses.list.mis.oth = 0;
+    _expenses.list.oth.oth = 0;
     // each all input
     $("#expenses-calculate #exp-"+name+"-div .form-accordion-details input[id]").each( function() {
         // setup ipt, drp
@@ -336,10 +342,10 @@ function __expenses_details( name )
         }
         total = Math.round( total );
         // check
-        if ( (store_name=='ren') || (store_name=='gro') || (store_name=='fue') || (store_name=='hom') ) {
+        if ( (store_name=='ren') || (store_name=='gro') || (store_name=='fue') || (store_name=='hom') || (store_name=='mis') ) {
             _expenses.list[name][store_name] = total;
         }else {
-            _expenses.list[name]['oth'] = total;
+            _expenses.list[name].oth += total;
         }
         total_all+=total;
     });
@@ -364,7 +370,6 @@ function __expenses_details_oth( name )
     if (oth_length >= 2) {
         $("#expenses-calculate #exp-"+name+"-div .form-accordion-details #exp-adm>div").html("Edit Subcategory");
     }
-    console.log(oth_length);
     // listen hou
     __listing_expenses();
 }
@@ -509,6 +514,7 @@ $("#finish-to-summary").on("click", function() {
     $("#calculate-summary #sum-sur").html( new Intl.NumberFormat().format(sur) );
     
     let list = expenses.list;
+    console.log(list);
     hou = list.hou.ren + list.hou.gro + list.hou.fue + list.hou.hom + list.hou.oth;
     tra = list.tra.ren + list.tra.gro + list.tra.fue + list.tra.hom + list.tra.oth;
     foo = list.foo.ren + list.foo.gro + list.foo.fue + list.foo.hom + list.foo.oth;
