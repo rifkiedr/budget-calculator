@@ -1110,7 +1110,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="calculation-result-wrapper margin-bottom margin-xhuge">
+                      <div id="calculate-invest" class="calculation-result-wrapper margin-bottom margin-xhuge">
                         <div class="margin-bottom margin-large">
                           <h3 class="heading-medium">Invest &amp; Grow Your Surplus to <span
                               class="text-span-2">£52,531</span></h3>
@@ -1121,7 +1121,7 @@
                               <div class="form-content-inside-wrapper surplus">
                                 <div class="margin-bottom margin-tiny">
                                   <h4 class="heading-small tiny">Wahed Portfolio</h4>
-                                </div><select id="field" name="field" data-name="Field" class="select-field-5 w-select">
+                                </div><select id="inv-portfolio" name="field" data-name="Field" class="select-field-5 w-select">
                                   <option value="Very Aggresive">Very Aggresive</option>
                                   <option value="Aggresive">Aggresive</option>
                                   <option value="Moderately Aggressive">Moderately Aggressive</option>
@@ -1135,21 +1135,22 @@
                                 <div class="margin-bottom margin-tiny">
                                   <h4 class="heading-small tiny">Invested</h4><input type="text"
                                     class="select-field-5 w-input" maxlength="256" name="field-4" data-name="Field 4"
-                                    placeholder="Example Text" id="field-4" required="">
+                                    placeholder="Example Text" id="inv-amount" required="">
                                 </div>
                               </div>
                               <div class="form-content-inside-wrapper surplus">
                                 <div class="margin-bottom margin-tiny">
                                   <h4 class="heading-small tiny">Period</h4>
-                                </div><select id="field-2" name="field-2" data-name="Field 2"
+                                </div><select id="inv-periode" name="field-2" data-name="Field 2"
                                   class="select-field-5 w-select">
-                                  <option value="One time">One time</option>
+                                  <option value="One Time">One time</option>
+                                  <option value="Weekly">Weekly</option>
                                   <option value="Monthly">Monthly</option>
                                 </select>
                               </div>
                             </div>
-                            <div id="w-node-_4b337c3b-458d-89c3-5185-0c8a4403d9e0-64b2bd7d" class="right-sum-chart">
-                              <div class="w-embed">ChartJS</div>
+                            <div id="w-node-_4b337c3b-458d-89c3-5185-0c8a4403d9e0-64b2bd7d" class="right-inv-chart">
+                              <canvas class="w-embed">ChartJS</canvas>
                             </div>
                           </div>
                         </div>

@@ -497,8 +497,6 @@ function __expenses_checked_box()
 // SUMMARY
 
 $("#finish-to-summary").on("click", function() {
-    // let income = result('income');
-    // let expenses = result('expenses');
     let income = _income;
     let expenses = _expenses;
 
@@ -506,15 +504,9 @@ $("#finish-to-summary").on("click", function() {
     $("#calculate-summary #sum-exp").html( new Intl.NumberFormat().format(expenses.total) );
     
     let sur = (income.total - expenses.total);
-    // if (income.total > expenses.total){
-    //     sur = income.total - expenses.total;
-    // }else {
-    //     sur = expenses.total - income.total;
-    // }
     $("#calculate-summary #sum-sur").html( new Intl.NumberFormat().format(sur) );
     
     let list = expenses.list;
-    console.log(list);
     hou = list.hou.ren + list.hou.gro + list.hou.fue + list.hou.hom + list.hou.oth;
     tra = list.tra.ren + list.tra.gro + list.tra.fue + list.tra.hom + list.tra.oth;
     foo = list.foo.ren + list.foo.gro + list.foo.fue + list.foo.hom + list.foo.oth;
@@ -531,7 +523,7 @@ $("#finish-to-summary").on("click", function() {
     $("#calculate-summary #oth-tot").html( new Intl.NumberFormat().format(oth) );
     $("#calculate-summary #oth-tot-color").css( "background-color", "rgba(189, 189, 189, 0.5)" );
     
-    new Chart( $(".right-sum-chart>canvas"), {
+    let chart = new Chart( $(".right-sum-chart>canvas"), {
         type: "doughnut",
         data: {
           labels: ['Housing', 'Transport', 'Food', 'Healthcare', 'Other'],
@@ -566,8 +558,118 @@ $("#finish-to-summary").on("click", function() {
         }
     });
 
+
+    if (sur <= 0) {
+        $("#calculate-invest").hide();
+    }
+
+    $("#calculate-invest #inv-amount").val( sur );
+
+    __listing_invest_and_grow();
+
 });
 
 
 
 
+
+
+// INVEST & GROW
+
+// listing all input
+function __listing_invest_and_grow() {
+    let chart = new Chart( $(".right-inv-chart>canvas"), {
+        type: "line",
+        options: {
+            plugins:{
+                legend: {
+                  display: false,
+                }
+            },
+            datasets: {
+                line: {
+                    offset: 0,
+                    weight: 0,
+                    tension: 0.4,
+                    borderColor: 'rgba(197, 199, 101, 0.5)',
+                },
+            },
+            scales: {
+                y: {
+                    ticks: {
+                        // Include a dollar sign in the ticks
+                        callback: function(value, index, ticks) {
+                            console.log(index);
+                            return '£' + formatNumber(value);
+                        }
+                    }
+                }
+            }
+        }
+    });
+    
+    chart.data = __invest_and_grow();
+    chart.update();
+
+    $("#calculate-invest #inv-portfolio").on("change", function() {
+        chart.data = __invest_and_grow();
+        chart.update();
+    });
+    $("#calculate-invest #inv-amount").on("change", function() {
+        chart.data = __invest_and_grow();
+        chart.update();
+    });
+    $("#calculate-invest #inv-periode").on("change", function() {
+        chart.data = __invest_and_grow();
+        chart.update();
+    });
+}
+
+// calculate invest & grow
+function __invest_and_grow() {
+    let chart;
+    let total = [];
+    let calculate;
+    let of_years = [0, 5, 10, 15, 20];
+    let portfolio_percent = {
+        "Very Aggresive": 11,
+        "Aggresive": 10,
+        "Moderately Aggressive": 9,
+        "Moderate": 8,
+        "Moderately Conservative": 7,
+        "Very Conservative": 6,
+        "Physical Gold": 5,
+    };
+
+    let portfolio = $("#calculate-invest #inv-portfolio").val();
+    let amount = parseFloat( $("#calculate-invest #inv-amount").val() );
+    let periode = $("#calculate-invest #inv-periode").val();
+
+    of_years.forEach( function(val) {
+        if (periode == "One Time") {
+            let calculate_portfolio = (portfolio_percent[portfolio]/100);
+            calculate = amount * ((1+ calculate_portfolio ) ** val);
+        }else {
+            let diverter;
+            if (periode == "Monthly") {
+                diverter = val*12;
+            }else {
+                diverter = val*52;
+            }
+            let calculate_portfolio = (portfolio_percent[portfolio]/100)/12;
+            calculate = (amount * ( (1 +calculate_portfolio) ** (diverter+1)-1 ) / calculate_portfolio) - amount;
+        }
+        calculate = Math.abs(calculate.toFixed(0));
+        total.push( calculate );
+    });
+
+    return {
+        labels: of_years,
+        datasets: [
+          {
+            label: 'Dataset',
+            data: total
+          }
+        ]
+    };
+}
