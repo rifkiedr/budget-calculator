@@ -631,6 +631,7 @@ function __invest_and_grow() {
     let total = [];
     let calculate;
     let of_years = [0, 5, 10, 15, 20];
+    let of_years_labels = [];
     let portfolio_percent = {
         "Very Aggresive": 11,
         "Aggresive": 10,
@@ -661,10 +662,13 @@ function __invest_and_grow() {
         }
         calculate = Math.abs(calculate.toFixed(0));
         total.push( calculate );
+        of_years_labels.push( val + " Years");
     });
 
+    $("#calculate-invest #inv-total").html( "£"+formatNumber(total[4]) );
+
     return {
-        labels: of_years,
+        labels: of_years_labels,
         datasets: [
           {
             label: 'Dataset',
