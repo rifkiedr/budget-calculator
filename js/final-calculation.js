@@ -58,12 +58,12 @@ function isStorageExist() {
 let _income = {
     total: 0,
     list: {
-        emp: 0,
-        sav: 0,
-        pen: 0,
-        ben: 0,
-        gif: 0,
-        oth: 0,
+        employment: 0,
+        saving: 0,
+        pension: 0,
+        benefits: 0,
+        gift: 0,
+        other: 0,
     }
 };
 let _expenses = {
