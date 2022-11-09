@@ -1,0 +1,1356 @@
+<!DOCTYPE html><!--  Last Published: Wed Nov 09 2022 06:37:16 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="635618b971b74a80e20add71" data-wf-site="6258aa32b493a205485f0800">
+<head>
+  <meta charset="utf-8">
+  <title>Budget Calculator</title>
+  <meta content="Budget Calculator" property="og:title">
+  <meta content="Budget Calculator" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../css/wahed-com.webflow.css" rel="stylesheet" type="text/css">
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../images/webclip.png" rel="apple-touch-icon"><!--  Google Tag Manager  -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MRVPGZS');</script>
+  <!--  End Google Tag Manager  -->
+  <script>
+(function(g,e,o,t,a,r,ge,tl,y,s){
+g.getElementsByTagName(o)[0].insertAdjacentHTML('afterbegin','<style id="georedirect1660233125210style">body{opacity:0.0 !important;}</style>');
+s=function(){g.getElementById('georedirect1660233125210style').innerHTML='body{opacity:1.0 !important;}';};
+t=g.getElementsByTagName(o)[0];y=g.createElement(e);y.async=true;
+y.src='https://g10300385420.co/gr?id=-N9CakjVUhHuGzt8Wu11&refurl='+g.referrer+'&winurl='+encodeURIComponent(window.location);
+t.parentNode.insertBefore(y,t);y.onerror=function(){s()};
+georedirect1660233125210loaded=function(redirect){var to=0;if(redirect){to=5000};
+setTimeout(function(){s();},to)};
+})(document,'script','head');
+</script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+/* Snippet gets rid of top margin on first element in any rich text*/
+.w-richtext>:first-child {
+	margin-top: 0;
+}
+/* Snippet gets rid of bottom margin on last element in any rich text*/
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+    margin-bottom: 0;
+}
+/* Snippet makes all link elements listed below to inherit color from their parent */
+a, 
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link
+{
+color: inherit;
+}
+/* Snippet prevents all click and hover interaction with an element */
+.clickable-off {
+  pointer-events: none;
+}
+/* Snippet enables all click and hover interaction with an element */
+.clickable-on{
+  pointer-events: auto;
+}
+/* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+.div-square::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+/*Hide focus outline for main content element*/
+    main:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+/* Make sure containers never lose their center alignment*/
+.container-medium, .container-small, .container-large {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+/*
+Reset selects, buttons, and links styles
+.w-input, .w-select, a {
+color: inherit;
+text-decoration: inherit;
+font-size: inherit;
+}
+*/
+/*Apply "..." after 3 lines of text */
+.text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+/* Apply "..." at 100% width */
+.truncate-width { 
+		width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none; // Safari and Chrome
+}
+</style>
+    </div>
+    <main class="main-wrapper">
+      <div data-collapse="small" data-animation="default" data-duration="400" data-w-id="7783fbee-7972-54a8-9fa4-a64269647961" data-easing="ease" data-easing2="ease" role="banner" class="navbar2_component w-nav">
+        <div class="navbar2_container">
+          <a href="../global.html" id="w-node-_7783fbee-7972-54a8-9fa4-a64269647963-69647961" class="navbar2_logo-link w-nav-brand"><img src="../images/wahed-color-logo.svg" loading="lazy" alt="" class="navbar2_logo medium-size"></a>
+          <nav role="navigation" id="w-node-_7783fbee-7972-54a8-9fa4-a64269647965-69647961" class="navbar2_menu w-nav-menu">
+            <div class="div-block-5">
+              <div class="navbar2_button-wrapper">
+                <div data-hover="true" data-delay="200" class="navbar2_menu-dropdown language w-dropdown">
+                  <div class="navbar2_dropdwn-toggle country w-dropdown-toggle"><img src="../images/globe-icon.svg" loading="lazy" alt="" class="country">
+                    <div>Global</div><img src="../images/Vector.svg" loading="lazy" alt="" class="icon-1x1-xxsmall custom">
+                  </div>
+                  <nav class="navbar2_dropdown-list-2 shadow-medium left country w-dropdown-list">
+                    <a href="../index.html" class="country-link w-inline-block"><img src="../images/united-states.svg" loading="lazy" alt="" class="icon-1x1-xsmall">
+                      <div>United States</div>
+                    </a>
+                    <a href="../uk.html" class="country-link w-inline-block"><img src="../images/united-kingdom.svg" loading="lazy" alt="" class="icon-1x1-xsmall">
+                      <div>United Kingdom</div>
+                    </a>
+                    <a href="../my.html" class="country-link w-inline-block"><img src="../images/malaysia.svg" loading="lazy" alt="" class="icon-1x1-xsmall">
+                      <div>Malaysia</div>
+                    </a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <a href="../global/investing.html" class="navbar2_link w-nav-link">Investing</a>
+            <a href="../global/shariah.html" class="navbar2_link w-nav-link">Shariah</a>
+            <a href="../global/who-are-we.html" class="navbar2_link w-nav-link">Who are we?</a>
+            <div data-hover="true" data-delay="200" class="navbar2_menu-dropdown etf w-dropdown">
+              <div class="navbar2_dropdwn-toggle etf w-dropdown-toggle">
+                <div>ETF</div><img src="../images/Vector.svg" loading="lazy" alt="" class="icon-1x1-xxsmall custom">
+              </div>
+              <nav class="navbar2_dropdown-list-2 shadow-medium etf w-dropdown-list">
+                <div>
+                  <a href="#" data-w-id="fc1136fe-4b6e-0956-12ba-9764b3f000cd" class="navbar2_dropdown-link left w-dropdown-link">HLAL</a>
+                </div>
+                <div>
+                  <a href="#" data-w-id="fc1136fe-4b6e-0956-12ba-9764b3f000e3" class="navbar2_dropdown-link left w-dropdown-link">UMMA</a>
+                </div>
+              </nav>
+            </div>
+            <a href="../global/pricing.html" class="navbar2_link special w-nav-link">Pricing</a>
+            <a href="#" data-w-id="5daad821-45e0-5b12-5521-c428bf2eaeec" class="navbar2_link w-nav-link">Blog</a>
+            <a data-w-id="cfae1a9a-9670-c439-c8d6-e68557f4c949" href="#" class="button margin-top margin-large mobile align-center w-button">Get The App</a>
+          </nav>
+          <div id="w-node-_7783fbee-7972-54a8-9fa4-a64269647966-69647961" class="navbar2_button-wrapper-2">
+            <div class="div-block-4">
+              <div id="w-node-_7783fbee-7972-54a8-9fa4-a64269647968-69647961" class="navbar2_button-wrapper">
+                <div data-hover="true" data-delay="200" class="navbar2_menu-dropdown language w-dropdown">
+                  <div class="navbar2_dropdwn-toggle country w-dropdown-toggle"><img src="../images/globe-icon.svg" loading="lazy" alt="" class="country">
+                    <div>Global</div><img src="../images/Vector.svg" loading="lazy" alt="" class="icon-1x1-xxsmall custom">
+                  </div>
+                  <nav class="navbar2_dropdown-list-2 shadow-medium left country w-dropdown-list">
+                    <a href="../index.html" class="country-link w-inline-block"><img src="../images/united-states.svg" loading="lazy" alt="" class="icon-1x1-xsmall">
+                      <div>United States</div>
+                    </a>
+                    <a href="../uk.html" class="country-link w-inline-block"><img src="../images/united-kingdom.svg" loading="lazy" alt="" class="icon-1x1-xsmall">
+                      <div>United Kingdom</div>
+                    </a>
+                    <a href="../my.html" class="country-link w-inline-block"><img src="../images/malaysia.svg" loading="lazy" alt="" class="icon-1x1-xsmall">
+                      <div>Malaysia</div>
+                    </a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="navbar2_menu-button w-nav-button">
+              <div class="menu-icon2">
+                <div class="menu-icon2_line-top"></div>
+                <div class="menu-icon2_line-middle">
+                  <div class="menu-icon_line-middle-inner"></div>
+                </div>
+                <div class="menu-icon2_line-bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-w-id="fdb4d3df-fd43-b75c-7b7e-714ae9d826e1" class="modal1_component">
+          <div data-w-id="fdb4d3df-fd43-b75c-7b7e-714ae9d826e2" class="modal1_content-wrapper">
+            <div class="div-block-12">
+              <a data-w-id="fdb4d3df-fd43-b75c-7b7e-714ae9d826e4" href="#" class="modal1_close-button w-inline-block"><img src="../images/close.svg" loading="lazy" alt="" class="hide-mobile-landscape"><img src="../images/close.svg" loading="lazy" alt="" class="show-mobile-landscape"></a>
+            </div>
+            <div class="padding-large padding-custom1">
+              <div class="div-block-18">
+                <h3 class="heading-large margin-bottom margin-large">Important Information</h3>
+                <div class="text-size-medium text-weight-medium margin-bottom margin-xlarge">You are leaving the Wahed Invest LLC websitenand will be redirected to the Wahed FTSE USA Shariah ETF website.</div>
+              </div>
+            </div>
+            <div class="div-block-21">
+              <a href="../global/hlal.html" class="button w-button">Continue</a>
+            </div>
+          </div>
+          <div data-w-id="fdb4d3df-fd43-b75c-7b7e-714ae9d826f4" class="modal1_background-overlay"></div>
+        </div>
+        <div data-w-id="47c0a7b8-5fd5-1f0b-215f-4ab24ea8f8a5" class="modal1_component">
+          <div data-w-id="47c0a7b8-5fd5-1f0b-215f-4ab24ea8f8a6" class="modal1_content-wrapper">
+            <div class="div-block-12">
+              <a data-w-id="47c0a7b8-5fd5-1f0b-215f-4ab24ea8f8a8" href="#" class="modal1_close-button w-inline-block"><img src="../images/close.svg" loading="lazy" alt="" class="hide-mobile-landscape"><img src="../images/close.svg" loading="lazy" alt="" class="show-mobile-landscape"></a>
+            </div>
+            <div class="padding-large padding-custom1">
+              <div class="div-block-18">
+                <h3 class="heading-large margin-bottom margin-large">Important Information</h3>
+                <div class="text-size-medium text-weight-medium margin-bottom margin-xlarge">You are leaving the Wahed Invest LLC website and will be redirected to the Wahed Dow Jones Islamic World ETF website.<br></div>
+              </div>
+              <div class="div-block-21">
+                <a href="../global/umma.html" class="button w-button">Continue</a>
+              </div>
+            </div>
+          </div>
+          <div data-w-id="47c0a7b8-5fd5-1f0b-215f-4ab24ea8f8b7" class="modal1_background-overlay"></div>
+        </div>
+        <div data-w-id="35361e98-1705-789b-acbc-22a40b112abc" class="modal1_component">
+          <div data-w-id="35361e98-1705-789b-acbc-22a40b112abd" class="modal1_content-wrapper blog">
+            <div class="div-block-12">
+              <a href="#" class="modal1_close-button w-inline-block"><img src="../images/close.svg" loading="lazy" alt="" class="hide-mobile-landscape"><img src="../images/close.svg" loading="lazy" alt="" class="show-mobile-landscape"></a>
+            </div>
+            <div class="padding-large padding-custom1">
+              <div class="div-block-18">
+                <h3 class="heading-large margin-bottom margin-large"> DISCLAIMER</h3>
+                <div class="div-block-22">
+                  <div class="text-size-medium text-weight-medium margin-bottom margin-xlarge">This material is for informational purposes only. The information is not intended to be used as the only basis for investment decisions, nor should it be construed as advice designed to meet your particular needs. You are advised to seek the advice of your financial adviser, legal or tax professional, prior to making any decision based on any specific information contained herein.<br><br>Any links to third-party websites are provided strictly as a courtesy. We make no representation as to the completeness or accuracy of information provided at these websites nor do we endorse the content and information contained on those sites. When you access one of these websites, you are leaving our website and assume total responsibility and risk for your use of the third-party websites.<br>Note: No Articles published on this website shall be reproduced in any form without the prior written permission of Wahed Invest.</div>
+                </div>
+              </div>
+            </div>
+            <div class="div-block-21">
+              <a href="../blog.html" class="button w-button">Continue</a>
+            </div>
+          </div>
+          <div data-w-id="35361e98-1705-789b-acbc-22a40b112ad1" class="modal1_background-overlay"></div>
+        </div>
+      </div>
+      <header class="section_header26">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large double">
+              <div class="header26_component">
+                <div class="form-block-5 w-form">
+                  <form id="email-form" name="email-form" data-name="Email Form" method="get" data-form="multistep" class="form-7">
+                    <div data-card="true" data-form="step" class="calculation-step">
+                      <div class="header26_component">
+                        <div class="margin-bottom margin-xxlarge">
+                          <div class="text-align-center">
+                            <div class="max-width-medium">
+                              <div class="margin-bottom margin-small">
+                                <h1 class="heading-xlarge">Wahed Budget Calculator</h1>
+                              </div>
+                              <p class="text-size-medium">Understanding where your money goes is the first step in budgeting.  Whether it’s your personal budget, or household budget, once you know where your money goes, it will be a lot easier to take control of your finances.</p>
+                              <div class="margin-top margin-medium">
+                                <div class="button-group is-center">
+                                  <a data-form="next-btn" href="#" class="button background-color-gold-baraka w-button">Get Started</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="header26_image-wrapper"><img sizes="(max-width: 1248px) 90vw, 1124px" srcset="../images/test16-1-p-500.png 500w, ../images/test16-1-p-800.png 800w, ../images/test16-1-p-1080.png 1080w, ../images/test16-1.png 1124w" loading="lazy" src="../images/test16-1.png" alt=""></div>
+                      </div>
+                    </div>
+                    <div id="income-calculate" data-form="step" class="calculation-step">
+                      <div class="w-layout-grid grid-22">
+                        <div id="w-node-_281c7755-0489-15f5-722a-4e2aec1457b6-e20add71" class="left-side">
+                          <div class="margin-bottom margin-small">
+                            <h3 class="heading-small">Enter income details</h3>
+                          </div>
+                          <div class="form-calculation-wrapper">
+                            <div id="emp-div" class="form-content-wrapper margin-bottom margin-xsmall">
+                              <div id="w-node-_281c7755-0489-15f5-722a-4e2aec1457bc-e20add71" class="form-content-inside-wrapper">
+                                <div class="margin-bottom margin-tiny">
+                                  <h4 class="heading-small tiny">Employment / Self Employment</h4>
+                                </div>
+                                <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_281c7755-0489-15f5-722a-4e2aec1457c1-e20add71 w-input" maxlength="256" name="Employment-Self-Employment" data-name="Employment &amp; Self Employment" placeholder="£0" id="employment"><select id="frequency-employment" name="field" data-name="Field" class="nice-select w-node-_281c7755-0489-15f5-722a-4e2aec1457c2-e20add71 w-select">
+                                    <option value="week">Per week</option>
+                                    <option value="month">Per month</option>
+                                    <option value="year">Per year</option>
+                                  </select></div>
+                              </div>
+                              <div id="w-node-_281c7755-0489-15f5-722a-4e2aec1457c3-e20add71" class="form-calculation-per-field">
+                                <div class="text-block-8"><span class="heading-large">$</span><span id="income-employment" class="heading-large">0</span>/mo</div><input type="text" class="text-field-7 w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Example Text" id="inp-employment">
+                              </div>
+                            </div>
+                            <div id="sav-div" class="form-content-wrapper margin-bottom margin-xsmall">
+                              <div id="w-node-_281c7755-0489-15f5-722a-4e2aec1457cb-e20add71" class="form-content-inside-wrapper">
+                                <div class="margin-bottom margin-tiny">
+                                  <h4 class="heading-small tiny">Saving &amp; Investment</h4>
+                                </div>
+                                <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_281c7755-0489-15f5-722a-4e2aec1457d0-e20add71 w-input" maxlength="256" name="Saving-Invesment" data-name="Saving &amp; Invesment" placeholder="£0" id="saving"><select id="frequency-saving" name="frequency-saving" data-name="frequency saving" class="nice-select w-node-_281c7755-0489-15f5-722a-4e2aec1457d1-e20add71 w-select">
+                                    <option value="week">Per week</option>
+                                    <option value="month">Per month</option>
+                                    <option value="year">Per year</option>
+                                  </select></div>
+                              </div>
+                              <div id="w-node-_281c7755-0489-15f5-722a-4e2aec1457d2-e20add71" class="form-calculation-per-field">
+                                <div class="text-block-8"><span class="heading-large">£</span><span id="income-saving" class="heading-large">0</span>/mo</div><input type="text" class="text-field-7 w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Example Text" id="inp-saving">
+                              </div>
+                            </div>
+                            <div id="pen-div" class="form-content-wrapper margin-bottom margin-xsmall">
+                              <div id="w-node-_281c7755-0489-15f5-722a-4e2aec1457da-e20add71" class="form-content-inside-wrapper">
+                                <div class="margin-bottom margin-tiny">
+                                  <h4 class="heading-small tiny">Pension / Annuity Payouts</h4>
+                                </div>
+                                <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_281c7755-0489-15f5-722a-4e2aec1457df-e20add71 w-input" maxlength="256" name="Pension-Annuity-Payouts" data-name="Pension / Annuity Payouts" placeholder="£0" id="pension"><select id="frequency-pension" name="frequency-pension" data-name="frequency pension" class="nice-select w-node-_281c7755-0489-15f5-722a-4e2aec1457e0-e20add71 w-select">
+                                    <option value="week">Per week</option>
+                                    <option value="month">Per month</option>
+                                    <option value="year">Per year</option>
+                                  </select></div>
+                              </div>
+                              <div id="w-node-_281c7755-0489-15f5-722a-4e2aec1457e1-e20add71" class="form-calculation-per-field">
+                                <div class="text-block-8"><span class="heading-large">£</span><span id="income-pension" class="heading-large">0</span>/mo</div><input type="text" class="text-field-7 w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Example Text" id="inp-pension">
+                              </div>
+                            </div>
+                            <div id="ben-div" class="form-content-wrapper margin-bottom margin-xsmall">
+                              <div id="w-node-_281c7755-0489-15f5-722a-4e2aec1457e9-e20add71" class="form-content-inside-wrapper">
+                                <div class="margin-bottom margin-tiny">
+                                  <h4 class="heading-small tiny">Benefits</h4>
+                                </div>
+                                <div class="w-layout-grid grid-23"><input type="text" class="text-field-6 w-node-_281c7755-0489-15f5-722a-4e2aec1457ee-e20add71 w-input" maxlength="256" name="Benefits" data-name="Benefits" placeholder="£0" id="benefits"><select id="frequency-benefits" name="frequency-benefits" data-name="frequency benefits" class="nice-select w-node-_281c7755-0489-15f5-722a-4e2aec1457ef-e20add71 w-select">
+                                    <option value="week">Per week</option>
+                                    <option value="month">Per month</option>
+                                    <option value="year">Per year</option>
+                                  </select></div>
+                              </div>
+                              <div id="w-node-_281c7755-0489-15f5-722a-4e2aec1457f0-e20add71" class="form-calculation-per-field">
+                                <div class="text-block-8"><span class="heading-large">£</span><span id="income-benefits" class="heading-large">0</span>/mo</div><input type="text" class="text-field-7 w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Example Text" id="inp-benefits">
+                              </div>
+                            </div>
+                            <div id="gif-div" class="form-content-wrapper margin-bottom margin-xsmall">
+                              <div id="w-node-_281c7755-0489-15f5-722a-4e2aec1457f8-e20add71" class="form-content-inside-wrapper">
+                                <div class="margin-bottom margin-tiny">
+                                  <h4 class="heading-small tiny">Gift From Family / Friends</h4>
+                                </div>
+                                <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_281c7755-0489-15f5-722a-4e2aec1457fd-e20add71 w-input" maxlength="256" name="Gift-From-Family-Friends" data-name="Gift From Family / Friends" placeholder="£0" id="gift"><select id="frequency-gift" name="frequency-gift" data-name="frequency gift" class="nice-select w-node-_281c7755-0489-15f5-722a-4e2aec1457fe-e20add71 w-select">
+                                    <option value="week">Per week</option>
+                                    <option value="month">Per month</option>
+                                    <option value="year">Per year</option>
+                                  </select></div>
+                              </div>
+                              <div id="w-node-_281c7755-0489-15f5-722a-4e2aec1457ff-e20add71" class="form-calculation-per-field">
+                                <div class="text-block-8"><span class="heading-large">£</span><span id="income-gift" class="heading-large">0</span>/mo</div><input type="text" class="text-field-7 w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Example Text" id="inp-gift">
+                              </div>
+                            </div>
+                            <div id="oth-div" class="form-content-wrapper margin-bottom margin-xsmall">
+                              <div id="w-node-_281c7755-0489-15f5-722a-4e2aec145807-e20add71" class="form-content-inside-wrapper">
+                                <div class="margin-bottom margin-tiny">
+                                  <h4 class="heading-small tiny">Other Income</h4>
+                                </div>
+                                <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_281c7755-0489-15f5-722a-4e2aec14580c-e20add71 w-input" maxlength="256" name="Other-Income" data-name="Other Income" placeholder="£0" id="other"><select id="frequency-other" name="frequency-income-other" data-name="frequency income other" class="nice-select w-node-_281c7755-0489-15f5-722a-4e2aec14580d-e20add71 w-select">
+                                    <option value="week">Per week</option>
+                                    <option value="month">Per month</option>
+                                    <option value="year">Per year</option>
+                                  </select></div>
+                              </div>
+                              <div id="w-node-_281c7755-0489-15f5-722a-4e2aec14580e-e20add71" class="form-calculation-per-field">
+                                <div class="text-block-8"><span class="heading-large">£</span><span id="income-other" class="heading-large">0</span>/mo</div><input type="text" class="text-field-7 w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Example Text" id="inp-other">
+                              </div>
+                            </div>
+                            <a id="income-add-more" data-w-id="281c7755-0489-15f5-722a-4e2aec145815" href="#" class="link-block w-inline-block">
+                              <div>Add more</div><img loading="lazy" src="../images/add-circle-24.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                        <div id="w-node-_281c7755-0489-15f5-722a-4e2aec145819-e20add71" class="right-side">
+                          <div class="margin-bottom margin-medium">
+                            <h2 class="heading-medium">Income</h2>
+                          </div>
+                          <div class="margin-bottom margin-medium">
+                            <h2 class="heading-xxlarge">£<span id="income-total">0</span></h2>
+                          </div>
+                          <div class="margin-bottom margin-medium">
+                            <div class="text-size-medium">Estimated Total Monthly Income</div>
+                          </div>
+                          <a data-form="next-btn" href="#" class="button form-calculation w-inline-block">
+                            <div>Expenses</div><img loading="lazy" src="../images/arrow-forward-24.svg" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="expenses-calculate" data-form="step" class="calculation-step">
+                      <div class="w-layout-grid grid-22">
+                        <div id="w-node-_9de0e1fb-af5a-e0ca-cfa0-3e78dcdb3910-e20add71" class="left-side">
+                          <div class="margin-bottom margin-small">
+                            <h3 class="heading-small">How much do you spend?</h3>
+                          </div>
+                          <div class="form-calculation-wrapper">
+                            <div id="exp-housing-div" class="form-accordion">
+                              <div data-w-id="42b33bb9-681b-e998-0ff3-a6940987b439" class="form-accordion-header">
+                                <div class="text-size-medium-2 text-weight-bold">Housing</div>
+                                <div class="text-block-8 new"><span class="heading-large">£</span><span id="expenses-housing" class="heading-large">0</span>/mo</div><input type="text" class="inc-collect w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Example Text" id="inp-other"><img loading="lazy" src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031621ef64aee78_icon_plus.svg" alt="" class="faq-05_icon">
+                              </div>
+                              <div style="width:100%;height:0px" class="form-accordion-details">
+                                <div class="margin-bottom margin-small">
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Mortgage</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-e9d52ccb-7563-7634-2180-091e9032a9c1-e20add71 w-input" maxlength="256" name="mortgage" data-name="mortgage" placeholder="£0" id="mortgage"><select id="frequency-expenses-mortgage" name="frequency-expenses-mortgage" data-name="frequency expenses mortgage" class="nice-select w-node-_02101ec4-a1e3-a5a3-df2c-64f9dca34d72-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Rent</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_4c40c46e-0019-c96b-dcac-ae5e0c87c8da-e20add71 w-input" maxlength="256" name="rent" data-name="rent" placeholder="£0" id="rent"><select id="frequency-expenses-rent" name="frequency-expenses-rent" data-name="frequency expenses rent" class="nice-select w-node-_4c40c46e-0019-c96b-dcac-ae5e0c87c8db-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Homeowners Insurance</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-c08fed19-bd28-27a2-40fe-10ff2e483740-e20add71 w-input" maxlength="256" name="homeowners-insurance" data-name="homeowners insurance" placeholder="£0" id="homeowners"><select id="frequency-expenses-homeowners" name="frequency-expenses-homeowners" data-name="frequency expenses homeowners" class="nice-select w-node-_5c68dee7-07be-2363-f834-1e1e3da276a3-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Property Taxes (e.g. Council Tax)</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_287951ce-22de-3d9a-6f37-6ce12c8c5845-e20add71 w-input" maxlength="256" name="property-taxes" data-name="property taxes" placeholder="£0" id="property"><select id="frequency-expenses-property" name="frequency-expenses-property" data-name="frequency expenses property" class="nice-select w-node-fe2c46a5-fb6c-7f0a-7faa-e0dc084591c1-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Maintenance Fees</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-c66da527-afd2-2473-1d85-938debffbbef-e20add71 w-input" maxlength="256" name="maintenanceFees" data-name="maintenance fees" placeholder="£0" id="maintenanceFees"><select id="frequency-expenses-maintenanceFees" name="frequency-expenses-maintenanceFees" data-name="frequency expenses maintenance" class="nice-select w-node-_0e982b37-26e9-94cf-4c65-3ab0d83b39d0-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Home Improvement</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_843588f4-8f33-c15e-88ae-2df99389d5e4-e20add71 w-input" maxlength="256" name="employment" data-name="employment" placeholder="£0" id="home"><select id="frequency-expenses-home" name="frequency-expenses-home" data-name="frequency expenses home" class="nice-select w-node-_843588f4-8f33-c15e-88ae-2df99389d5e5-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="wrapping-add-more"></div>
+                                  <!-- <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="Housing-Custom-1" data-name="Housing Custom 1" placeholder="Custom Subcategory" id="housing-custom-1"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_66f1be5d-f12a-c460-4874-5b2be95a3a94-e20add71 w-input" maxlength="256" name="housing-custom-value-1" data-name="housing custom value 1" placeholder="£0" id="housing-custom-value-1"><select id="frequency-expenses-housing1" name="frequency-expenses-housing-1" data-name="frequency expenses housing 1" class="nice-select w-node-_66f1be5d-f12a-c460-4874-5b2be95a3a95-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="Housing-Custom-2" data-name="Housing Custom 2" placeholder="Custom Subcategory" id="housing-custom-2"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_725f48c5-118f-d853-7f51-00f76fa2b392-e20add71 w-input" maxlength="256" name="housing-custom-value-2" data-name="housing custom value 2" placeholder="£0" id="housing-custom-value-2"><select id="frequency-expenses-housing2" name="frequency-expenses-housing-2" data-name="frequency expenses housing 2" class="nice-select w-node-_725f48c5-118f-d853-7f51-00f76fa2b393-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="Housing-Custom-3" data-name="Housing Custom 3" placeholder="Custom Subcategory" id="housing-custom-3"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-e5c81d92-209c-8ab1-8c74-9d5423146ed5-e20add71 w-input" maxlength="256" name="housing-custom-value-3" data-name="housing custom value 3" placeholder="£0" id="housing-custom-value-3"><select id="frequency-expenses-housing3" name="frequency-expenses-housing-3" data-name="frequency expenses housing 3" class="nice-select w-node-e5c81d92-209c-8ab1-8c74-9d5423146ed6-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div> -->
+                                  <a id="expenses-housing-add-more" href="#" class="link-block w-inline-block">
+                                    <div>add other subcategory</div><img loading="lazy" src="../images/add-circle-24.svg" alt="">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="exp-transport-div" class="form-accordion">
+                              <div data-w-id="1b584cde-47b7-06fd-8821-53f2fbfc0fb4" class="form-accordion-header">
+                                <div class="text-size-medium-2 text-weight-bold">Transport</div>
+                                <div class="text-block-8 new"><span class="heading-large">£</span><span id="expenses-transport" class="heading-large">0</span>/mo</div><input type="text" class="inc-collect w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Example Text" id="inp-other"><img loading="lazy" src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031621ef64aee78_icon_plus.svg" alt="" class="faq-05_icon">
+                              </div>
+                              <div style="width:100%;height:0px" class="form-accordion-details">
+                                <div class="margin-bottom margin-small">
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Vehicle Insurance</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_1b584cde-47b7-06fd-8821-53f2fbfc0fc5-e20add71 w-input" maxlength="256" name="vehicle-insurance" data-name="vehicle insurance" placeholder="£0" id="vehicle"><select id="frequency-expenses-vehicle" name="frequency-expenses-vehicle" data-name="frequency expenses vehicle" class="nice-select w-node-_1b584cde-47b7-06fd-8821-53f2fbfc0fc6-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Fuel</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_1b584cde-47b7-06fd-8821-53f2fbfc0fcc-e20add71 w-input" maxlength="256" name="fuel" data-name="fuel" placeholder="£0" id="fuel"><select id="frequency-expenses-fuel" name="frequency-expenses-fuel" data-name="frequency expenses fuel" class="nice-select w-node-_1b584cde-47b7-06fd-8821-53f2fbfc0fcd-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Public Transportation</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_1b584cde-47b7-06fd-8821-53f2fbfc0fd3-e20add71 w-input" maxlength="256" name="public-transportation" data-name="public transportation" placeholder="£0" id="public"><select id="frequency-expenses-public" name="frequency-expenses-public" data-name="frequency expenses public" class="nice-select w-node-_1b584cde-47b7-06fd-8821-53f2fbfc0fd4-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Vehicle Maintenance</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_1b584cde-47b7-06fd-8821-53f2fbfc0fda-e20add71 w-input" maxlength="256" name="vehicleMaintenance" data-name="vehicle maintenance" placeholder="£0" id="vehicleMaintenance"><select id="frequency-expenses-vehicleMaintenance" name="frequency-expenses-vehicleMaintenance" data-name="frequency expenses vehicle maintenance" class="nice-select w-node-_1b584cde-47b7-06fd-8821-53f2fbfc0fdb-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="wrapping-add-more"></div>
+                                  <!-- <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="transport-custom-1" data-name="transport custom 1" placeholder="Custom Subcategory" id="transport-custom"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_1b584cde-47b7-06fd-8821-53f2fbfc0fe0-e20add71 w-input" maxlength="256" name="transport-custom-value-1" data-name="transport custom value 1" placeholder="£0" id="transport-custom-value-1"><select id="frequency-expenses-transport1" name="frequency-expenses-transport-1" data-name="frequency expenses transport 1" class="nice-select w-node-_1b584cde-47b7-06fd-8821-53f2fbfc0fe1-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="transport-custom-2" data-name="transport custom 2" placeholder="Custom Subcategory" id="transport-custom-2"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_1b584cde-47b7-06fd-8821-53f2fbfc0fe6-e20add71 w-input" maxlength="256" name="transport-custom-value-2" data-name="transport custom value 2" placeholder="£0" id="transport-custom-value-2"><select id="frequency-expenses-transport2" name="frequency-expenses-transport-2" data-name="frequency expenses transport 2" class="nice-select w-node-_1b584cde-47b7-06fd-8821-53f2fbfc0fe7-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="transport-custom-3" data-name="transport custom 3" placeholder="Custom Subcategory" id="transport-custom-3"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_1b584cde-47b7-06fd-8821-53f2fbfc0fec-e20add71 w-input" maxlength="256" name="transport-custom-value-3" data-name="transport custom value 3" placeholder="£0" id="transport-custom-value-3"><select id="frequency-expenses-transport3" name="frequency-expenses-transport-3" data-name="frequency expenses transport 3" class="nice-select w-node-_1b584cde-47b7-06fd-8821-53f2fbfc0fed-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div> -->
+                                  <a id="expenses-transport-add-more" href="#" class="link-block w-inline-block">
+                                    <div>add other subcategory</div><img loading="lazy" src="../images/add-circle-24.svg" alt="">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="exp-food-div" class="form-accordion">
+                              <div data-w-id="d1d773f6-454e-e561-d462-2338865ef0ea" class="form-accordion-header">
+                                <div class="text-size-medium-2 text-weight-bold">Food</div>
+                                <div class="text-block-8 new"><span class="heading-large">£</span><span id="expenses-food" class="heading-large">0</span>/mo</div><input type="text" class="inc-collect w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Example Text" id="inp-other"><img loading="lazy" src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031621ef64aee78_icon_plus.svg" alt="" class="faq-05_icon">
+                              </div>
+                              <div style="width:100%;height:0px" class="form-accordion-details">
+                                <div class="margin-bottom margin-small">
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Groceries</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-d1d773f6-454e-e561-d462-2338865ef0fb-e20add71 w-input" maxlength="256" name="groceries" data-name="groceries" placeholder="£0" id="groceries"><select id="frequency-expenses-groceries" name="frequency-expenses-groceries" data-name="frequency expenses groceries" class="nice-select w-node-d1d773f6-454e-e561-d462-2338865ef0fc-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Dining Out</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-d1d773f6-454e-e561-d462-2338865ef102-e20add71 w-input" maxlength="256" name="diningOut" data-name="dining out" placeholder="£0" id="diningOut"><select id="frequency-expenses-diningOut" name="frequency-expenses-diningOut" data-name="frequency expenses dining" class="nice-select w-node-d1d773f6-454e-e561-d462-2338865ef103-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="wrapping-add-more"></div>
+                                  <!-- <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="food-custom-1" data-name="food custom 1" placeholder="Custom Subcategory" id="food-custom"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-d1d773f6-454e-e561-d462-2338865ef116-e20add71 w-input" maxlength="256" name="food-custom-value-1" data-name="food custom value 1" placeholder="£0" id="food-custom-value-1"><select id="frequency-expenses-food1" name="frequency-expenses-food-1" data-name="frequency expenses food 1" class="nice-select w-node-d1d773f6-454e-e561-d462-2338865ef117-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="food-custom-2" data-name="food custom 2" placeholder="Custom Subcategory" id="food-custom-2"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-d1d773f6-454e-e561-d462-2338865ef11c-e20add71 w-input" maxlength="256" name="food-custom-value-2" data-name="food custom value 2" placeholder="£0" id="food-custom-value-2"><select id="frequency-expenses-food2" name="frequency-expenses-food-2" data-name="frequency expenses food 2" class="nice-select w-node-d1d773f6-454e-e561-d462-2338865ef11d-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="food-custom-3" data-name="food custom 3" placeholder="Custom Subcategory" id="food-custom-3"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-d1d773f6-454e-e561-d462-2338865ef122-e20add71 w-input" maxlength="256" name="food-custom-value-3" data-name="food custom value 3" placeholder="£0" id="food-custom-value-3"><select id="frequency-expenses-food3" name="frequency-expenses-food-3" data-name="frequency expenses food 3" class="nice-select w-node-d1d773f6-454e-e561-d462-2338865ef123-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div> -->
+                                  <a id="expenses-food-add-more" href="#" class="link-block w-inline-block">
+                                    <div>add other subcategory</div><img loading="lazy" src="../images/add-circle-24.svg" alt="">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="exp-healthcare-div" class="form-accordion">
+                              <div data-w-id="6f18fde7-84e1-a45c-e97f-7955da8d6245" class="form-accordion-header">
+                                <div class="text-size-medium-2 text-weight-bold">Healthcare</div>
+                                <div class="text-block-8 new"><span class="heading-large">£</span><span id="expenses-healthcare" class="heading-large">0</span>/mo</div><input type="text" class="inc-collect w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Example Text" id="inp-other"><img loading="lazy" src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031621ef64aee78_icon_plus.svg" alt="" class="faq-05_icon">
+                              </div>
+                              <div style="width:100%;height:0px" class="form-accordion-details">
+                                <div class="margin-bottom margin-small">
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Medication and Supplies</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_6f18fde7-84e1-a45c-e97f-7955da8d6256-e20add71 w-input" maxlength="256" name="medication-and-supplies" data-name="medication and supplies" placeholder="£0" id="medication"><select id="frequency-expenses-medication" name="frequency-expenses-medication" data-name="frequency expenses medication" class="nice-select w-node-_6f18fde7-84e1-a45c-e97f-7955da8d6257-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Health Insurance</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_6f18fde7-84e1-a45c-e97f-7955da8d625d-e20add71 w-input" maxlength="256" name="health-insurance" data-name="health insurance" placeholder="£0" id="health"><select id="frequency-expenses-health" name="frequency-expenses-health" data-name="frequency expenses health" class="nice-select w-node-_6f18fde7-84e1-a45c-e97f-7955da8d625e-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Medical Services</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_6f18fde7-84e1-a45c-e97f-7955da8d6264-e20add71 w-input" maxlength="256" name="medical-services" data-name="medical services" placeholder="£0" id="medical"><select id="frequency-expenses-medical" name="frequency-expenses-medical" data-name="frequency expenses medical" class="nice-select w-node-_6f18fde7-84e1-a45c-e97f-7955da8d6265-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="wrapping-add-more"></div>
+                                  <!-- <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="healthcare-custom-1" data-name="healthcare custom 1" placeholder="Custom Subcategory" id="healthcare-custom"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_6f18fde7-84e1-a45c-e97f-7955da8d6271-e20add71 w-input" maxlength="256" name="healthcare-custom-value-1" data-name="healthcare custom value 1" placeholder="£0" id="healthcare-custom-value-1"><select id="frequency-expenses-healthcare1" name="frequency-expenses-healthcare-1" data-name="frequency expenses healthcare 1" class="nice-select w-node-_6f18fde7-84e1-a45c-e97f-7955da8d6272-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="healthcare-custom-2" data-name="healthcare custom 2" placeholder="Custom Subcategory" id="healthcare-custom-2"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_6f18fde7-84e1-a45c-e97f-7955da8d6277-e20add71 w-input" maxlength="256" name="healthcare-custom-value-2" data-name="healthcare custom value 2" placeholder="£0" id="healthcare-custom-value-2"><select id="frequency-expenses-healthcare2" name="frequency-expenses-healthcare-2" data-name="frequency expenses healthcare 2" class="nice-select w-node-_6f18fde7-84e1-a45c-e97f-7955da8d6278-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="healthcare-custom-3" data-name="healthcare custom 3" placeholder="Custom Subcategory" id="healthcare-custom-3"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_6f18fde7-84e1-a45c-e97f-7955da8d627d-e20add71 w-input" maxlength="256" name="healthcare-custom-value-1" data-name="healthcare custom value 1" placeholder="£0" id="healthcare-custom-value-3"><select id="frequency-expenses-healthcare3" name="frequency-expenses-healthcare-3" data-name="frequency expenses healthcare 3" class="nice-select w-node-_6f18fde7-84e1-a45c-e97f-7955da8d627e-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div> -->
+                                  <a id="expenses-healthcare-add-more" href="#" class="link-block w-inline-block">
+                                    <div>add other subcategory</div><img loading="lazy" src="../images/add-circle-24.svg" alt="">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="exp-miscellaneous-div" class="form-accordion">
+                              <div data-w-id="5477fa8c-a209-7c12-59c1-f63ad924ca90" class="form-accordion-header">
+                                <div class="text-size-medium-2 text-weight-bold">Miscellaneous</div>
+                                <div class="text-block-8 new"><span class="heading-large">£</span><span id="expenses-miscellaneous" class="heading-large">0</span>/mo</div><input type="text" class="inc-collect w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Example Text" id="inp-other"><img loading="lazy" src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031621ef64aee78_icon_plus.svg" alt="" class="faq-05_icon">
+                              </div>
+                              <div style="width:100%;height:0px" class="form-accordion-details">
+                                <div class="margin-bottom margin-small">
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Entertainment</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_5477fa8c-a209-7c12-59c1-f63ad924caa1-e20add71 w-input" maxlength="256" name="entertainment" data-name="entertainment" placeholder="£0" id="entertainment"><select id="frequency-expenses-entertainment" name="frequency-expenses-entertainment" data-name="frequency expenses entertainment" class="nice-select w-node-_5477fa8c-a209-7c12-59c1-f63ad924caa2-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Travel/Vacation</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_5477fa8c-a209-7c12-59c1-f63ad924caa8-e20add71 w-input" maxlength="256" name="travel-vacation" data-name="travel/vacation" placeholder="£0" id="travel"><select id="frequency-expenses-travel" name="frequency-expenses-travel" data-name="frequency expenses travel" class="nice-select w-node-_5477fa8c-a209-7c12-59c1-f63ad924caa9-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Hobbies</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_5477fa8c-a209-7c12-59c1-f63ad924caaf-e20add71 w-input" maxlength="256" name="hobbies" data-name="hobbies" placeholder="£0" id="hobbies"><select id="frequency-expenses-hobbies" name="frequency-expenses-hobbies" data-name="frequency expenses hobbies" class="nice-select w-node-_5477fa8c-a209-7c12-59c1-f63ad924cab0-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Gifts</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_5477fa8c-a209-7c12-59c1-f63ad924cab6-e20add71 w-input" maxlength="256" name="gifts" data-name="gifts" placeholder="£0" id="gifts"><select id="frequency-expenses-gifts" name="frequency-expenses-gifts" data-name="frequency expenses gifts" class="nice-select w-node-_5477fa8c-a209-7c12-59c1-f63ad924cab7-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Charity</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_488a1b18-503e-aebd-4497-1ce79616ac33-e20add71 w-input" maxlength="256" name="charity" data-name="charity" placeholder="£0" id="charity"><select id="frequency-expenses-charity" name="frequency-expenses-charity" data-name="frequency expenses charity" class="nice-select w-node-_488a1b18-503e-aebd-4497-1ce79616ac34-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny">
+                                      <h4 class="heading-small tiny">Wedding</h4>
+                                    </div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-a822c141-7831-488a-a20f-ce6294b708eb-e20add71 w-input" maxlength="256" name="wedding" data-name="wedding" placeholder="£0" id="wedding"><select id="frequency-expenses-wedding" name="frequency-expenses-wedding" data-name="frequency expenses wedding" class="nice-select w-node-a822c141-7831-488a-a20f-ce6294b708ec-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="wrapping-add-more"></div>
+                                  <!-- <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="miscellaneous-custom-1" data-name="miscellaneous custom 1" placeholder="Custom Subcategory" id="miscellaneous-custom"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_5477fa8c-a209-7c12-59c1-f63ad924cabc-e20add71 w-input" maxlength="256" name="miscellaneous-custom-value-1" data-name="miscellaneous custom value 1" placeholder="£0" id="miscellaneous-custom-value-1"><select id="frequency-expenses-miscellaneous1" name="frequency-expenses-miscellaneous-1" data-name="frequency expenses miscellaneous 1" class="nice-select w-node-_5477fa8c-a209-7c12-59c1-f63ad924cabd-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="miscellaneous-custom-2" data-name="miscellaneous custom 2" placeholder="Custom Subcategory" id="miscellaneous-custom-2"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_5477fa8c-a209-7c12-59c1-f63ad924cac2-e20add71 w-input" maxlength="256" name="miscellaneous-custom-value-2" data-name="miscellaneous custom value 2" placeholder="£0" id="miscellaneous-custom-value-2"><select id="frequency-expenses-miscellaneous2" name="frequency-expenses-miscellaneous-2" data-name="frequency expenses miscellaneous 2" class="nice-select w-node-_5477fa8c-a209-7c12-59c1-f63ad924cac3-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="miscellaneous-custom-3" data-name="miscellaneous custom 3" placeholder="Custom Subcategory" id="miscellaneous-custom-3"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_5477fa8c-a209-7c12-59c1-f63ad924cac8-e20add71 w-input" maxlength="256" name="miscellaneous-custom-value-3" data-name="miscellaneous custom value 3" placeholder="£0" id="miscellaneous-custom-value-3"><select id="frequency-expenses-miscellaneous3" name="frequency-expenses-miscellaneous-3" data-name="frequency expenses miscellaneous 3" class="nice-select w-node-_5477fa8c-a209-7c12-59c1-f63ad924cac9-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div> -->
+                                  <a id="expenses-miscellaneous-add-more" href="#" class="link-block w-inline-block">
+                                    <div>add other subcategory</div><img loading="lazy" src="../images/add-circle-24.svg" alt="">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="exp-custom-div" class="form-accordion">
+                              <div data-w-id="15edf95f-2355-b187-3734-5c1de82b1613" class="form-accordion-header"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="custom-category" data-name="custom category" placeholder="Custom Category" id="custom-category">
+                                <div class="text-block-8 new"><span class="heading-large">£</span><span id="expenses-custom" class="heading-large">0</span>/mo</div><input type="text" class="inc-collect w-input" maxlength="256" name="field-5" data-name="Field 5" placeholder="Example Text" id="inp-other"><img loading="lazy" src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031621ef64aee78_icon_plus.svg" alt="" class="faq-05_icon">
+                              </div>
+                              <div style="width:100%;height:0px" class="form-accordion-details">
+                                <div class="margin-bottom margin-small">
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="custom-category-1" data-name="custom category 1" placeholder="Custom Subcategory"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_15edf95f-2355-b187-3734-5c1de82b163f-e20add71 w-input" maxlength="256" name="customValue1" data-name="custom category value 1" placeholder="£0" id="customValue1"><select id="frequency-expenses-customValue1" name="frequency-expenses-customValue1" data-name="frequency expenses category 1" class="nice-select w-node-_15edf95f-2355-b187-3734-5c1de82b1640-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="custom-category-2" data-name="custom category 2" placeholder="Custom Subcategory"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_15edf95f-2355-b187-3734-5c1de82b1645-e20add71 w-input" maxlength="256" name="customValue2" data-name="custom category value 2" placeholder="£0" id="customValue2"><select id="frequency-expenses-customValue2" name="frequency-expenses-customValue2" data-name="frequency expenses category 2" class="nice-select w-node-_15edf95f-2355-b187-3734-5c1de82b1646-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="custom-category-3" data-name="custom category 3" placeholder="Custom Subcategory"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_15edf95f-2355-b187-3734-5c1de82b164b-e20add71 w-input" maxlength="256" name="customValue3" data-name="custom category value 3" placeholder="£0" id="customValue3"><select id="frequency-expenses-customValue3" name="frequency-expenses-customValue3" data-name="frequency expenses category 3" class="nice-select w-node-_15edf95f-2355-b187-3734-5c1de82b164c-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="wrapping-add-more"></div>
+                                  <!-- <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="custom-category-4" data-name="custom category 4" placeholder="Custom Subcategory" id="custom-category-5"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-a536ee4c-4eeb-3900-4514-322cec22232d-e20add71 w-input" maxlength="256" name="custom-category-value-4" data-name="custom category value 4" placeholder="£0" id="custom-category-value-4"><select id="frequency-expenses-category4" name="frequency-expenses-category-4" data-name="frequency expenses category 4" class="nice-select w-node-a536ee4c-4eeb-3900-4514-322cec22232e-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div>
+                                  <div class="form-content-inside-wrapper inside">
+                                    <div class="margin-bottom margin-tiny"><input type="text" class="text-field-6 input-text w-input" maxlength="256" name="custom-category-5" data-name="custom category 5" placeholder="Custom Subcategory" id="custom-category-6"></div>
+                                    <div class="w-layout-grid grid-23"><input type="number" class="text-field-6 w-node-_336a7c57-52ff-86dd-4528-02d1df7d447d-e20add71 w-input" maxlength="256" name="custom-category-value-5" data-name="custom category value 5" placeholder="£0" id="custom-category-value-5"><select id="frequency-expenses-category5" name="frequency-expenses-category-5" data-name="frequency expenses category 5" class="nice-select w-node-_336a7c57-52ff-86dd-4528-02d1df7d447e-e20add71 w-select">
+                                        <option value="week">Per week</option>
+                                        <option value="month">Per month</option>
+                                        <option value="year">Per year</option>
+                                      </select></div>
+                                  </div> -->
+                                  <a id="expenses-custom-add-more" href="#" class="link-block w-inline-block">
+                                    <div>add other subcategory</div><img loading="lazy" src="../images/add-circle-24.svg" alt="">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <a id="expenses-add-more" data-w-id="9de0e1fb-af5a-e0ca-cfa0-3e78dcdb396f" href="#" class="link-block w-inline-block">
+                              <div>Add more</div><img loading="lazy" src="../images/add-circle-24.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                        <div id="w-node-_9de0e1fb-af5a-e0ca-cfa0-3e78dcdb3973-e20add71" class="right-side">
+                          <div class="margin-bottom margin-medium">
+                            <h2 class="heading-medium">Expenses</h2>
+                          </div>
+                          <div class="margin-bottom margin-medium">
+                            <h2 class="heading-xxlarge">£<span id="expenses-total">0</span></h2>
+                          </div>
+                          <div class="margin-bottom margin-medium">
+                            <div class="text-size-medium">Estimated Total Monthly Income</div>
+                          </div>
+                          <div class="div-block-29">
+                            <a data-form="back-btn" href="#" class="button form-calculation back w-inline-block"><img loading="lazy" src="../images/arrow-forward-24.svg" alt="" class="image-13">
+                              <div>Back</div>
+                            </a>
+                            <a data-form="next-btn" href="#" id="finish-to-summary" class="button form-calculation w-inline-block">
+                              <div>Finish</div><img loading="lazy" src="../images/arrow-forward-24.svg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-form="step" class="calculation-step">
+                      <div class="calculation-result-wrapper margin-bottom margin-xhuge">
+                        <div class="margin-bottom margin-small">
+                          <h3 class="heading-medium">Your Summary</h3>
+                        </div>
+                        <div class="summary-content-wrapper margin-bottom margin-large">
+                          <div class="w-layout-grid grid-25">
+                            <div id="w-node-_20b7c930-7666-2642-1f9e-bc4af7c2b55d-e20add71" class="sum-content-card purple">
+                              <div class="sum-heading margin-bottom margin-medium">
+                                <h4 class="heading-xsmall">Income</h4><img loading="lazy" src="../images/Group-2281.svg" alt="" class="image-14">
+                              </div>
+                              <div>
+                                <div class="heading-large">£<span id="summary-income">0</span></div>
+                                <div>Estimated Total Monthly Income</div>
+                              </div>
+                            </div>
+                            <div id="w-node-_9ca6c584-5c1d-1683-d990-1fce19deed99-e20add71" class="sum-content-card green">
+                              <div class="sum-heading margin-bottom margin-medium">
+                                <h4 class="heading-xsmall">Total Expenses</h4><img loading="lazy" src="../images/Group-2281.svg" alt="" class="image-14">
+                              </div>
+                              <div>
+                                <div class="heading-large">£<span id="summary-expenses">0</span></div>
+                                <div>Estimated Total Monthly Income</div>
+                              </div>
+                            </div>
+                            <div id="w-node-_9b3a62e8-97a8-5839-0f3a-200ad28f0298-e20add71" class="sum-content-card yellow">
+                              <div class="sum-heading margin-bottom margin-medium">
+                                <h4 class="heading-xsmall">Surplus</h4>
+                              </div>
+                              <div>
+                                <div class="heading-large">£<span id="summary-surplus">0</span></div>
+                                <div>Estimated Total Monthly Income</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sum-chart-wrapper padding-horizontal padding-xxhuge">
+                          <div class="w-layout-grid grid-26">
+                            <div id="w-node-_179fece6-a72a-e4ed-1f49-e70b8d027e17-e20add71" class="left-sum-chart">
+                              <div class="sum-line-list-expenses margin-bottom margin-large">
+                                <div class="sum-list margin-bottom margin-small">
+                                  <div class="left-content-sum-list">
+                                    <div class="sum-round-dots"></div>
+                                    <div>Housing</div>
+                                  </div>
+                                  <div class="heading-xsmall">£<span id="housing-total">2,593</span></div>
+                                </div>
+                                <div class="sum-list margin-bottom margin-small">
+                                  <div class="left-content-sum-list">
+                                    <div class="sum-round-dots"></div>
+                                    <div>Transport</div>
+                                  </div>
+                                  <div class="heading-xsmall">£<span id="transport-total">2,593</span></div>
+                                </div>
+                                <div class="sum-list margin-bottom margin-small">
+                                  <div class="left-content-sum-list">
+                                    <div class="sum-round-dots"></div>
+                                    <div>Food</div>
+                                  </div>
+                                  <div class="heading-xsmall">£<span id="food-total">2,593</span></div>
+                                </div>
+                                <div class="sum-list margin-bottom margin-small">
+                                  <div class="left-content-sum-list">
+                                    <div class="sum-round-dots"></div>
+                                    <div>Healthcare</div>
+                                  </div>
+                                  <div class="heading-xsmall">£<span id="healthcare-total">2,593</span></div>
+                                </div>
+                                <div class="sum-list margin-bottom margin-small">
+                                  <div class="left-content-sum-list">
+                                    <div class="sum-round-dots"></div>
+                                    <div>Other</div>
+                                  </div>
+                                  <div class="heading-xsmall">£<span id="other-total">2,593</span></div>
+                                </div>
+                              </div>
+                              <a href="#" class="button result w-inline-block">
+                                <div>Email Result</div><img loading="lazy" src="../images/email-24.svg" alt="">
+                              </a>
+                            </div>
+                            <div id="w-node-_591535f3-e644-9e7a-215d-50f85486a940-e20add71" class="right-sum-chart">
+                              <canvas class="w-embed">ChartJS</canvas>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="calculate-invest" class="calculation-result-wrapper margin-bottom margin-xhuge">
+                        <div class="margin-bottom margin-large">
+                          <h3 class="heading-medium">Invest &amp; Grow Your Surplus to <span class="text-span-2" id="invest-total">£0</span></h3>
+                        </div>
+                        <div class="sum-chart-wrapper surplus">
+                          <div class="w-layout-grid grid-26">
+                            <div id="w-node-_4b337c3b-458d-89c3-5185-0c8a4403d9ad-e20add71" class="left-sum-chart">
+                              <div class="form-content-inside-wrapper surplus">
+                                <div class="margin-bottom margin-tiny">
+                                  <h4 class="heading-small tiny">Wahed Portfolio</h4>
+                                </div><select id="invest-portfolio" name="invest-portfolio" data-name="Field" class="select-field-5 w-select">
+                                  <option value="Very Aggresive">Very Aggresive</option>
+                                  <option value="Aggresive">Aggresive</option>
+                                  <option value="Moderately Aggressive">Moderately Aggressive</option>
+                                  <option value="Moderate">Moderate</option>
+                                  <option value="Moderately Conservative">Moderately Conservative</option>
+                                  <option value="Very Conservative">Very Conservative</option>
+                                  <option value="Physical Gold">Physical Gold</option>
+                                </select>
+                              </div>
+                              <div class="form-content-inside-wrapper surplus">
+                                <div class="margin-bottom margin-tiny">
+                                  <h4 class="heading-small tiny">Invested</h4><input type="text" class="select-field-5 w-input" maxlength="256" name="invest-amount" data-name="Field 4" placeholder="" id="invest-amount" required="">
+                                </div>
+                              </div>
+                              <div class="form-content-inside-wrapper surplus">
+                                <div class="margin-bottom margin-tiny">
+                                  <h4 class="heading-small tiny">Period</h4>
+                                </div><select id="invest-periode" name="invest-periode" data-name="Field 2" class="select-field-5 w-select">
+                                  <option value="One time">One time</option>
+                                  <option value="weekly">Weekly</option>
+                                  <option value="Monthly">Monthly</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div id="w-node-_4b337c3b-458d-89c3-5185-0c8a4403d9e0-e20add71" class="right-inv-chart">
+                              <canvas class="w-embed">ChartJS</canvas>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="div-block-30"></div>
+                      <div class="margin-top margin-huge">
+                        <div class="make-your-money-grow">
+                          <div class="div-block-31">
+                            <h2 class="heading-xsmall">Make your money grow</h2>
+                            <p>Why not set up a Standing Order to make a regular contribution to a savings account? That way you&#x27;ll reach your savings goal faster.</p>
+                          </div>
+                          <a href="#" class="button result w-inline-block">
+                            <div>Invest with Wahed</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="w-form-done">
+                    <div>Thank you! Your submission has been received!</div>
+                  </div>
+                  <div class="w-form-fail">
+                    <div>Oops! Something went wrong while submitting the form.</div>
+                  </div>
+                </div>
+                <div style="display:none;opacity:0" class="login-modal2_component">
+                  <div class="login-modal2_content-wrapper">
+                    <div class="margin-bottom margin-medium">
+                      <div class="text-align-center">
+                        <div class="max-width-large align-center">
+                          <p class="heading-xsmall text-align-left">Choose from the topics below</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="login-modal2_form-block w-form">
+                      <form id="wf-form-Log-in-Form-2" name="wf-form-Log-in-Form-2" data-name="Log in Form 2" method="get" class="login-modal2_form">
+                        <div id="w-node-e0f0de98-aa60-bdf3-0ca7-0e56434d6d30-e20add71" class="w-embed">
+                          <div class="form-field-wrapper pop-up"><label class="w-checkbox checkbox-field">
+                              <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox w--redirected-checked">
+                              </div><input type="checkbox" id="checkbox-emp" value="emp" name="checkbox" data-name="Checkbox" checked="" style="opacity:0;position:absolute;z-index:-1"><span class="w-form-label" for="checkbox">Employment / Self Employment</span>
+                            </label></div>
+                          <div class="form-field-wrapper pop-up"><label class="w-checkbox checkbox-field">
+                              <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox w--redirected-checked">
+                              </div><input type="checkbox" id="checkbox-sav" value="sav" name="checkbox-2" data-name="Checkbox 2" checked="" style="opacity:0;position:absolute;z-index:-1"><span class="w-form-label" for="checkbox-2">Savings &amp; Investment</span>
+                            </label></div>
+                          <div class="form-field-wrapper pop-up"><label class="w-checkbox checkbox-field">
+                              <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox w--redirected-checked">
+                              </div><input type="checkbox" id="checkbox-pen" value="pen" name="checkbox-2" data-name="Checkbox 2" checked="" style="opacity:0;position:absolute;z-index:-1"><span class="w-form-label" for="checkbox-2">Pension / Annuity Payouts</span>
+                            </label></div>
+                          <div class="form-field-wrapper pop-up"><label class="w-checkbox checkbox-field">
+                              <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox w--redirected-checked">
+                              </div><input type="checkbox" id="checkbox-ben" value="ben" name="checkbox-2" data-name="Checkbox 2" checked="" style="opacity:0;position:absolute;z-index:-1"><span class="w-form-label" for="checkbox-2">Benefits</span>
+                            </label></div>
+                          <div class="form-field-wrapper pop-up"><label class="w-checkbox checkbox-field">
+                              <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="checkbox-gif" value="gif" name="checkbox-2" data-name="Checkbox 2" style="opacity:0;position:absolute;z-index:-1"><span class="w-form-label" for="checkbox-2">Gift From Family /Friends</span>
+                            </label></div>
+                          <div class="form-field-wrapper pop-up"><label class="w-checkbox checkbox-field">
+                              <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="checkbox-oth" value="oth" name="checkbox-2" data-name="Checkbox 2" style="opacity:0;position:absolute;z-index:-1"><span class="w-form-label" for="checkbox-2">Other Income</span>
+                            </label></div>
+                        </div>
+                        <div class="form-field-wrapper pop-up"></div>
+                      </form>
+                      <div class="success-message w-form-done">
+                        <div class="success-text">Thank you! Your submission has been received!</div>
+                      </div>
+                      <div class="error-message w-form-fail">
+                        <div class="error-text">Oops! Something went wrong while submitting the form.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <a data-w-id="5e2349c5-7cb0-0b24-e315-41f741502c15" href="#" class="login-modal2_close-button w-inline-block"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031627a354aee7f_icon_close-modal-white.svg" loading="lazy" alt="" class="hide-mobile-landscape"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031623afe4aee7e_icon_close-modal.svg" loading="lazy" alt="" class="show-mobile-landscape"></a>
+                  <div data-w-id="5e2349c5-7cb0-0b24-e315-41f741502c18" class="login-modal2_background-overlay"></div>
+                </div>
+                <div style="display:none;opacity:0" class="login-modal2_component-copy">
+                  <div class="login-modal2_content-wrapper">
+                    <div class="margin-bottom margin-medium">
+                      <div class="text-align-center">
+                        <div class="max-width-large align-center">
+                          <p class="heading-xsmall text-align-left">Choose from the topics below</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="login-modal2_form-block w-form">
+                      <form id="wf-form-Log-in-Form-2" name="wf-form-Log-in-Form-2" data-name="Log in Form 2" method="get" class="login-modal2_form">
+                        <div class="form-field-wrapper pop-up"><label class="w-checkbox checkbox-field">
+                            <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox w--redirected-checked"></div><input value="housing" type="checkbox" id="checkbox-3" name="checkbox-3" data-name="Checkbox 3" checked="" style="opacity:0;position:absolute;z-index:-1"><span class="w-form-label" for="checkbox-3">Housing</span>
+                          </label></div>
+                        <div class="form-field-wrapper pop-up"><label class="w-checkbox checkbox-field">
+                            <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox w--redirected-checked"></div><input value="transport" type="checkbox" id="checkbox-2" name="checkbox-2" data-name="Checkbox 2" checked="" style="opacity:0;position:absolute;z-index:-1"><span class="w-form-label" for="checkbox-2">Transport</span>
+                          </label></div>
+                        <div class="form-field-wrapper pop-up"><label class="w-checkbox checkbox-field">
+                            <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox w--redirected-checked"></div><input value="food" type="checkbox" id="checkbox-2" name="checkbox-2" data-name="Checkbox 2" checked="" style="opacity:0;position:absolute;z-index:-1"><span class="w-form-label" for="checkbox-2">Food</span>
+                          </label></div>
+                        <div class="form-field-wrapper pop-up"><label class="w-checkbox checkbox-field">
+                            <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox w--redirected-checked"></div><input value="healthcare" type="checkbox" id="checkbox-2" name="checkbox-2" data-name="Checkbox 2" checked="" style="opacity:0;position:absolute;z-index:-1"><span class="w-form-label" for="checkbox-2">Healthcare</span>
+                          </label></div>
+                        <div class="form-field-wrapper pop-up"><label class="w-checkbox checkbox-field">
+                            <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input value="miscellaneous" type="checkbox" id="checkbox-2" name="checkbox-2" data-name="Checkbox 2" style="opacity:0;position:absolute;z-index:-1"><span class="w-form-label" for="checkbox-2">Miscellaneous</span>
+                          </label></div>
+                        <div class="form-field-wrapper pop-up"><label class="w-checkbox checkbox-field">
+                            <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input value="custom" type="checkbox" id="checkbox-2" name="checkbox-2" data-name="Checkbox 2" style="opacity:0;position:absolute;z-index:-1"><span class="w-form-label" for="checkbox-2">Custom Category</span>
+                          </label></div>
+                      </form>
+                      <div class="success-message w-form-done">
+                        <div class="success-text">Thank you! Your submission has been received!</div>
+                      </div>
+                      <div class="error-message w-form-fail">
+                        <div class="error-text">Oops! Something went wrong while submitting the form.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <a data-w-id="d1c9e3bf-62ff-8a6a-0036-befded5a0c6b" href="#" class="login-modal2_close-button w-inline-block"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031627a354aee7f_icon_close-modal-white.svg" loading="lazy" alt="" class="hide-mobile-landscape"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031623afe4aee7e_icon_close-modal.svg" loading="lazy" alt="" class="show-mobile-landscape"></a>
+                  <div data-w-id="d1c9e3bf-62ff-8a6a-0036-befded5a0c6e" class="login-modal2_background-overlay"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <footer class="footer8_component">
+        <div class="page-padding">
+          <div class="container-large">
+            <div class="padding-vertical padding-xxlarge">
+              <div class="padding-bottom padding-xlarge">
+                <div class="w-layout-grid footer8_top-wrapper margin-bottom margin-xlarge">
+                  <div id="w-node-_69eb91c1-d389-90fb-1ad6-38adfdaf857f-fdaf8579" class="footer8_left-wrapper">
+                    <a href="#" id="w-node-_69eb91c1-d389-90fb-1ad6-38adfdaf8580-fdaf8579" class="footer8_logo-link w-nav-brand"><img src="../images/wahed-logo-2022.svg" loading="lazy" alt="" class="image-2"></a>
+                  </div>
+                </div>
+                <div class="w-layout-grid footer1_menu-wrapper">
+                  <div class="footer1_link-list">
+                    <div class="margin-bottom margin-xsmall">
+                      <div class="text-weight-semibold">Contact us</div>
+                    </div>
+                    <a href="mailto:globalsupport@wahedinvest.com" class="footer1_link">globalsupport@wahedinvest.com</a>
+                    <a href="tel:+17652123831" class="footer1_link">+1 (765) 212-3831</a>
+                  </div>
+                  <div class="footer1_link-list">
+                    <div class="margin-bottom margin-xsmall">
+                      <a href="../global/legal.html" class="text-weight-semibold w-inline-block">Legal</a>
+                    </div>
+                  </div>
+                  <div class="footer1_link-list">
+                    <div class="margin-bottom margin-xsmall">
+                      <a href="../global/investor-relations.html" class="text-weight-semibold w-inline-block">Investor relations</a>
+                    </div>
+                  </div>
+                  <div class="footer1_link-list">
+                    <div class="margin-bottom margin-xsmall">
+                      <a href="../global/career.html" class="text-weight-semibold w-inline-block">Careers</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="line-divider"></div>
+              <div class="padding-top padding-medium custom">
+                <div class="margin-bottom">
+                  <div class="div-block-16 grid">
+                    <p class="text-size-medium heading-small">Wahed entities</p>
+                    <p class="text-size-medium">Refer to this <a href="../index.html">link</a> for the US entity, and this <a href="../uk.html">link</a> for the UK entity</p>
+                  </div>
+                </div>
+              </div>
+              <div class="line-divider"></div>
+              <div class="padding-top padding-medium custom">
+                <div class="margin-bottom">
+                  <div>
+                    <p class="text-size-medium heading-small">Wahed Securities Ltd - MAURITIUS</p>
+                    <p class="text-size-medium">Address: Suite 1909, 19th Floor, Citadelle Mall, Sir Edgar Laurent Street, Port-Louis, Mauritius<br><br>Disclaimer:  Wahed Securities Ltd. (“Wahed”) is licensed by the Financial Services Commission of Mauritius as an Investment Dealer (Broker). Wahed is authorised to execute orders for clients, manage portfolios of clients and give advice on securities transactions to its clients under a license issued under Section 29 of the Securities Act 2005, Rule 4 of the Securities (Licensing) Rules 2007 and the Financial Services (Consolidated Licensing and Fees) Rules 2008. Wahed holds a Category 1 Global Business License under Section 72(6) of the Financial Services Act and is allowed to conduct business outside Mauritius for the purposes of Part X of the Financial Services Act. Wahed does not intend to offer or solicit anyone to buy or sell securities in jurisdictions where such actions are not permitted or in a region where such investment services would be contrary to the laws or regulations.<br><br>All investing involves risk, including the possible loss of money you invest, and past performance does not guarantee future performance. Historical returns, expected returns, and probability projections are provided for informational and illustrative purposes, and may not reflect actual future performance. Wahed assumes no responsibility for liability for your trading and investment results. It should not be assumed that the methods, techniques, or indicators presented in these products will be profitable, or that they will not result in losses. Past results of any trading system published by Wahed, through the Website or otherwise, are not indicative of future returns by that system, and are not indicative of future returns which will be realized by you.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer5_component">
+          <div class="page-padding">
+            <div class="container-large">
+              <div class="padding-vertical padding-small">
+                <div class="padding-top">
+                  <div class="footer5_bottom-wrapper">
+                    <div id="w-node-_69eb91c1-d389-90fb-1ad6-38adfdaf85b3-fdaf8579" class="footer5_credit-text">© 2022 Wahed Inc.| All rights reserved.</div>
+                    <div class="w-layout-grid footer5_social-icons">
+                      <a href="https://www.instagram.com/wahedinvest/" class="footer5_social-link w-inline-block"><img src="../images/instagram.svg" loading="lazy" alt="" class="social-icon">
+                        <div class="text-block-2">Instagram</div>
+                      </a>
+                      <a href="https://www.facebook.com/WahedInvest/" target="_blank" class="footer5_social-link w-inline-block"><img src="../images/facebook.svg" loading="lazy" alt="" class="social-icon">
+                        <div class="text-block-2">Facebook</div>
+                      </a>
+                      <a href="https://twitter.com/wahedinvest/" target="_blank" class="footer5_social-link w-inline-block"><img src="../images/twitter.svg" loading="lazy" alt="" class="social-icon">
+                        <div class="text-block-2">Twitter</div>
+                      </a>
+                      <a href="https://www.youtube.com/channel/UChpYCu2S6dXMrf2xhF8UG7w" target="_blank" class="footer5_social-link w-inline-block"><img src="../images/youtube.svg" loading="lazy" alt="" class="social-icon">
+                        <div class="text-block-2">Youtube</div>
+                      </a>
+                      <a href="https://in.linkedin.com/company/wahedinvest" target="_blank" class="footer5_social-link w-inline-block"><img src="../images/linkedin.svg" loading="lazy" alt="" class="social-icon">
+                        <div class="text-block-2">LinkedIn</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </footer>
+    </main>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6258aa32b493a205485f0800" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/videsigns/webflow-tools@latest/multi-step.js"> </script>
+  <script defer="" src="../calc/final-calculation-update.js" type="text/javascript"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <script>
+$(document).ready(function() {
+$('select').niceSelect();
+});
+</script>
+  <script>
+$(document).ready(function() {
+  $('select').niceSelect();
+});
+</script>
+  <style>
+:root {/* ----------- Colors ----------- */
+ --list-bg-color: #ffffff;
+ --list-text-color: inherit;
+ --select-field-arrow-color: #546E7A;
+ --list-item-bg-color: #F0F2F4;
+ --border-color-hover: #37474e;
+ /* ----------- Spacing ----------- */
+ --select-field-padding-left: 15px;
+ --select-field-padding-right: 15px;
+ --list-padding-top-bottom: 10px;
+ --list-max-height: 200px;
+ --list-item-padding-left: 18px;
+ --list-item-padding-right: 18px;
+ --list-item-min-height: 40px;
+ --list-item-line-height: 40px;
+}
+.nice-select {
+ box-sizing: border-box;
+ clear: both;
+ padding-left: var(--select-field-padding-left);
+ padding-right: var(--select-field-padding-right);
+ padding-top: 12px;
+ position: relative;
+ text-align: left !important;
+}
+.nice-select:hover {
+ border-color: #CFD8DC;
+ border: 1px solid #CFD8DC;
+}
+.nice-select:active, .nice-select.open, .nice-select:focus {
+ border-color: #CFD8DC;
+ border: 1px solid #CFD8DC;
+}
+.nice-select:after {
+ border-bottom: 2px solid var(--select-field-arrow-color);
+ border-right: 2px solid var(--select-field-arrow-color);
+ content: '';
+ margin-top: -4px;
+ display: block;
+ height: 5px;
+ pointer-events: none;
+ position: absolute;
+ right: 12px;
+ top: 50%;
+ -webkit-transform-origin: 66% 66%;
+ -ms-transform-origin: 66% 66%;
+ transform-origin: 66% 66%;
+ -webkit-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ transform: rotate(45deg);
+ -webkit-transition: all 0.15s ease-in-out;
+ transition: all 0.15s ease-in-out;
+ width: 5px;
+ z-index: 100 !important;
+}
+.nice-select.open .list {
+ opacity: 1;
+ pointer-events: auto;
+ -webkit-transform: scale(1) translateY(0);
+ -ms-transform: scale(1) translateY(0);
+ transform: scale(1) translateY(0);
+ z-index: 200;
+}
+.nice-select.right {
+ float: right;
+}
+.nice-select.right .list {
+ left: auto;
+ right: 0;
+}
+.nice-select.small {
+ font-size: 14px;
+ height: 36px;
+ line-height: 34px;
+}
+.nice-select.small:after {
+ height: 4px;
+ width: 4px;
+}
+.nice-select.small .option {
+ line-height: 34px;
+ min-height: 34px;
+}
+.nice-select .list {
+border: 1px solid #CFD8DC;
+width: 100%;
+ font-size: 15px;
+ background-color: #ffffff;
+ color: var(--list-text-color);
+ box-shadow: 0 7px 20px 0px rgba(68, 68, 68, 0.11);
+ box-sizing: border-box;
+ border-radius: 2px;
+ opacity: 0;
+ overflow: hidden;
+ padding: var(--list-padding-top-bottom) 0px;
+ pointer-events: none;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ overflow-y: scroll;
+ overflow-x: hidden;
+ max-height: var(--list-max-height);
+ z-index: 999 !important;
+}
+.nice-select .option {
+ cursor: pointer;
+ font-weight: 400;
+ font-size: 15px;
+ line-height: var(--list-item-line-height);
+ list-style: none;
+ min-height: var(--list-item-min-height);
+ outline: none;
+ padding-left: var(--list-item-padding-left);
+ padding-right: var(--list-item-padding-right);
+ text-align: left;
+ -webkit-transition: all 0.2s;
+ transition: all 0.2s;
+margin-bottom: 0;
+}
+span.current {
+color: var(--list-text-color);
+}
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+ background-color: var(--list-item-bg-color);
+}
+</style>
+</body>
+</html>
