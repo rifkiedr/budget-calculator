@@ -544,7 +544,7 @@ $("#finish-to-summary").on("click", function() {
     $("#healthcare-total-color").css( "background-color", "rgba(199, 101, 101, 0.5)" );
     $("#other-total-color").css( "background-color", "rgba(189, 189, 189, 0.5)" );
     
-    new Chart( $(".right-sum-chart>canvas"), {
+    new Chart( $(".right-sum-chart canvas"), {
         type: "doughnut",
         data: {
           labels: ['Housing', 'Transport', 'Food', 'Healthcare', 'Other'],
@@ -598,7 +598,7 @@ $("#finish-to-summary").on("click", function() {
 
 // listing all input
 function __listing_invest_and_grow() {
-    let chart = new Chart( $(".right-inv-chart>canvas"), {
+    let chart = new Chart( $(".right-inv-chart canvas"), {
         type: "line",
         options: {
             plugins:{
