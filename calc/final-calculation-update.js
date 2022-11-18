@@ -551,7 +551,14 @@ $("#finish-to-summary").on("click", function() {
           datasets: [
             {
               label: 'Dataset',
-              data: [summary.housing, summary.transport, summary.food, summary.healthcare, summary.miscellaneous+summary.custom]
+              data: [summary.housing, summary.transport, summary.food, summary.healthcare, summary.miscellaneous+summary.custom],
+              backgroundColor: [
+                "rgba(197, 199, 101, 0.5)",
+                "rgba(101, 150, 199, 0.5)",
+                "rgba(101, 199, 147, 0.5)",
+                "rgba(199, 101, 101, 0.5)",
+                "rgba(189, 189, 189, 0.5)"
+              ]
             }
           ]
         },
@@ -566,13 +573,6 @@ $("#finish-to-summary").on("click", function() {
                     offset: 0,
                     borderWidth: 0,
                     weight: 0,
-                    backgroundColor: [
-                        "rgba(197, 199, 101, 0.5)",
-                        "rgba(101, 150, 199, 0.5)",
-                        "rgba(101, 199, 147, 0.5)",
-                        "rgba(199, 101, 101, 0.5)",
-                        "rgba(189, 189, 189, 0.5)",
-                    ],
                 },
             },
             
@@ -611,7 +611,6 @@ function __listing_invest_and_grow() {
                     offset: 0,
                     weight: 0,
                     tension: 0.4,
-                    borderColor: 'rgba(197, 199, 101, 0.5)',
                 },
             },
             scales: {
@@ -691,7 +690,8 @@ function __invest_and_grow() {
         datasets: [
           {
             label: 'Dataset',
-            data: total
+            data: total,
+            borderColor: 'rgba(197, 199, 101, 0.5)',
           }
         ]
     };
